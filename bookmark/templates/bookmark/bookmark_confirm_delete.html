@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block title %}
+북마크 삭제
+{% endblock %}
+
+
+{% block content %}
+    <form action="" method="post">
+        {% csrf_token %}
+        <div class="alert alert-danger">"{{object}}" 북마크를 삭제합니까?</div>
+        <input type="submit" value="삭제" class="btn btn-danger">
+    </form>
+
+{% endblock %}
