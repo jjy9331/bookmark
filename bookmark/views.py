@@ -12,6 +12,7 @@ class BookmarkListView(ListView):
     model = Bookmark
     paginate_by = 3   # ListView 페이지에서 Paginate 기능 활성화
 
+
 # 새로운 Bookmark 추가함수
 class BookmarkCreateView(CreateView):
     model = Bookmark
@@ -35,3 +36,4 @@ class BookmarkUpdateView(UpdateView):
 class BookmarkDeleteView(DeleteView):
     model = Bookmark
     success_url = reverse_lazy('list')
+
